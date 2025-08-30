@@ -49,6 +49,8 @@
   let dashOffset = 0;
   let shimmerPhase = 0;
   let prefersReducedMotion = false;
+  let isMobile = false;
+  let mq;
 
   const dispatch = createEventDispatcher();
 
@@ -136,7 +138,7 @@
     groupBg.setAttribute("transform", "scale(1.02)");
     groupMid.removeAttribute("transform");
     if (groupSlot) {
-      if (!prefersReducedMotion && (parallax || scale)) {
+      if (!prefersReducedMotion && (parallax || scale) && !isMobile) {
         const rect = host.getBoundingClientRect();
         const viewportCenter = window.innerHeight / 2;
         const center = rect.top + rect.height / 2;
@@ -160,6 +162,9 @@
 
   let pathEdge, pathEdgeGlow, pathMiddleRing, pathClip;
   let groupBg, groupMid, groupEdge, groupSlot, gradShimmer;
+  function updateIsMobile(e) {
+    isMobile = e.matches;
+  }
 
   $: {
     if (svgEl) {
@@ -171,6 +176,11 @@
     observeSize();
     const rm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
     prefersReducedMotion = respectReducedMotion && rm ? rm.matches : false;
+    if (window.matchMedia) {
+      mq = window.matchMedia("(max-width: 768px)");
+      updateIsMobile(mq);
+      mq.addEventListener("change", updateIsMobile);
+    }
     rafId = requestAnimationFrame(loop);
   });
 
@@ -180,6 +190,7 @@
       cancelAnimationFrame(rafId);
     }
     ro && ro.disconnect();
+    mq && mq.removeEventListener("change", updateIsMobile);
   });
 </script>
 
