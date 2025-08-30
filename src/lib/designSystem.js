@@ -33,6 +33,15 @@ export const designSystem = {
         h6: 'var(--font-size-h6)',
         xx: 'var(--font-size-xx)'
       },
+      mobileSizes: {
+        h1: 'var(--font-size-h1-mobile)',
+        h2: 'var(--font-size-h2-mobile)',
+        h3: 'var(--font-size-h3-mobile)',
+        h4: 'var(--font-size-h4-mobile)',
+        h5: 'var(--font-size-h5-mobile)',
+        h6: 'var(--font-size-h6-mobile)',
+        xx: 'var(--font-size-xx)'
+      },
       weights: {
         light: 'var(--font-weight-light)',
         normal: 'var(--font-weight-normal)',

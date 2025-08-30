@@ -6,7 +6,7 @@ const dev = process.argv.includes('dev');
 export default {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter(),
+    adapter: adapter({ fallback: 'app.html' }),
     paths: {
       base: dev ? '' : '/about'
     }

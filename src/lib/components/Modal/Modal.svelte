@@ -53,12 +53,12 @@
         aria-label="Close"
         type="button"
         style=" position: absolute;
-        top: var(--modal-padding);
-        right: var(--modal-padding);
+        top: 0.5rem;
+        right: 0.5rem;
         border: none;
         background: var(--color-text);
         font-size: var(--font-size-h4);
-        color: #FFF;
+        color: var(--color-bg);
         cursor: pointer;
         padding: 0.5rem 1rem;
         line-height: 1;"

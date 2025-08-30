@@ -37,7 +37,7 @@
 <article
   class="glass interactive"
   style="
-    --card-padding: {designSystem.spacing.m};
+    --card-padding: {designSystem.spacing.s};
     --card-gap: calc({designSystem.spacing.m} / 2);
     --card-radius: {designSystem.radius};
   "
@@ -106,7 +106,15 @@
     gap: var(--card-gap);
     text-align: left;
     border-radius: var(--card-radius);
+    width: 100%;
+    box-sizing: border-box;
   }
+  @media (min-width: 600px) {
+    article {
+      --card-padding: var(--spacing-m);
+    }
+  }
+  
   .image-wrapper {
     width: 100%;
     aspect-ratio: 2 / 1;

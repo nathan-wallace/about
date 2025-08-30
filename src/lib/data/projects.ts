@@ -28,7 +28,7 @@ export const projects = [
     skills: ['API Integration', 'JavaScript', 'Svelte']
   },
   {
-    title: 'DailyEarthquakes.com',
+    title: 'Daily Earthquakes',
     description: '3D visualization of recent earthquake data across the globe, using Three.js. USGS data is displayed as animated points on a 3D Earth model, with options to control playback, time, and interactivity.',
     link: 'https://dailyearthquakes.com',
     image: '/dailyearthquakes.png',
