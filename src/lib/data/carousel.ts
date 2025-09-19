@@ -29,14 +29,14 @@ export const carouselItems = [
   },
   {
     title: 'Interactive Map',
-    description: 'An archive of Georgetown University advancement campiagn websites.',
+    description: 'An interactive map with Drupal.',
     link: 'https://www.floodsmart.gov/historical-nfip-claims-information-and-trends?map=countries/us/custom/us-all-territories&region=us&miny=all&maxy=all&county=&gtype=country',
     image: '/work/nfip_map.png',
     skills: ['Project Management', 'Drupal', 'Tech Lead'],
     details: {
       title: 'FloodSmart.gov - Yes& Agency',
       description:
-        'Duplicate entry for example purposes. Includes filtering and tagging features.',
+        'An interactive map with Drupal and highcharts.js.',
       links: [{ href: 'https://www.floodsmart.gov/historical-nfip-claims-information-and-trends?map=countries/us/custom/us-all-territories&region=us&miny=all&maxy=all&county=&gtype=country', text: 'Visit site' }],
       img: '/work/nfip_map.png'
     }
