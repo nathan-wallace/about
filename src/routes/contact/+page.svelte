@@ -3,7 +3,13 @@
   import Button from '$lib/components/Button/Button.svelte';
   import { base } from '$app/paths';
 </script>
-
+<svelte:head>
+  <title>Contact — Nathan Wallace</title>
+  <meta name="description" content="About Nathan Wallace: Technology specialist with full-stack range and program leadership. Federal, higher-ed, and association experience. PMP, CSM, ITIL v4, DHS Trusted Tester." />
+  <meta property="og:title" content="Nathan Wallace — Program Management & Software Development (Front-end Specialist)" />
+  <meta property="og:description" content="I turn strategy into shipped products with the customer in focus." />
+  <meta property="og:image" content="https://nathan-wallace.github.io/about/meta.png" />
+</svelte:head>
 <TextImage
   heading="Let's connect"
   headingLevel={1}
