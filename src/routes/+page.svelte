@@ -28,9 +28,10 @@
 </style>
 <svelte:head>
   <title>Nathan Wallace — Developer & Program Manager (Front-end Specialist)</title>
-  <meta name="description" content="About Nathan Wallace: front-end specialist with full-stack range and program leadership. Federal, higher-ed, and association experience. PMP, CSM, ITIL v4, DHS Trusted Tester." />
-  <meta property="og:title" content="Nathan Wallace — Developer & Program Manager (Front-end Specialist)" />
-  <meta property="og:description" content="I turn strategy into shipped, accessible software—hands-on and delivery-minded." />
+  <meta name="description" content="About Nathan Wallace: Technology specialist with full-stack range and program leadership. Federal, higher-ed, and association experience. PMP, CSM, ITIL v4, DHS Trusted Tester." />
+  <meta property="og:title" content="Nathan Wallace — Program Management & Software Development (Front-end Specialist)" />
+  <meta property="og:description" content="I turn strategy into shipped products with the customer in focus." />
+  <meta property="og:image" content="https://nathan-wallace.github.io/about/meta.png" />
 </svelte:head>
 <Container> 
 <Hero
