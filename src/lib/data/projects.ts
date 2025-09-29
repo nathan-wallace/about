@@ -8,7 +8,7 @@ export const projects = [
   },
   {
     title: 'Social Design Kit',
-    description: 'Kickstart social media campaigns with this GitHub template built on Storybook, letting teams create, preview, and export on-brand assets, drag-and-drop helpers, and ready-to-customize platform canvases.',
+    description: 'Kickstart social media campaigns with this GitHub template built on Storybook, letting teams create, preview, and export on-brand assets.',
     link: 'https://github.com/nathan-wallace/social-toolkit-starter',
     image: '/social-design-kit.png',
     skills: ['Storybook', 'Design Systems', 'JavaScript']
