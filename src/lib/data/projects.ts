@@ -21,13 +21,6 @@ export const projects = [
     skills: ['Drupal', 'Accessibility']
   },
   {
-    title: 'Wayback Radio',
-    description: 'Explore archival audio recordings through a unique, year-by-year browsing experience. By selecting a specific year, a listener can journey through history via sound.',
-    link: 'https://nathan-wallace.github.io/wayback-radio',
-    image: '/wayback-radio.png',
-    skills: ['API Integration', 'JavaScript', 'Svelte']
-  },
-  {
     title: 'LOC Collections',
     description: 'Explore thousands of Library of Congress artifacts, photographs, and documents. Choose a collection, browse unique items, and save your favorites for future reference.',
     link: 'https://nathan-wallace.github.io/loc-collections',
@@ -55,6 +48,13 @@ export const projects = [
         { href: 'https://nathan-wallace.github.io/risk-mgmt/projects', text: 'Visit site' }
       ],
       img: '/risk-mgmt.png'   
+    }
+  },
+  {
+    title: 'Wayback Radio',
+    description: 'Explore archival audio recordings through a unique, year-by-year browsing experience. By selecting a specific year, a listener can journey through history via sound.',
+    link: 'https://nathan-wallace.github.io/wayback-radio',
+    image: '/wayback-radio.png',
+    skills: ['API Integration', 'JavaScript', 'Svelte']
   }
-}
 ];
