@@ -28,6 +28,13 @@ export const projects = [
     skills: ['API Integration', 'JavaScript', 'Svelte']
   },
   {
+    title: 'Content Governance for Drupal',
+    description: 'A Drupal module that provides a set of fields and UI for managing content governance across a site.',
+    link: 'https://www.drupal.org/project/govdash',
+    image: '/governance.png',
+    skills: ['Drupal', 'PHP']
+  },
+  {
     title: 'Daily Earthquakes',
     description: '3D visualization of recent earthquake data across the globe, using Three.js. USGS data is displayed as animated points on a 3D Earth model, with options to control playback, time, and interactivity.',
     link: 'https://dailyearthquakes.com',
