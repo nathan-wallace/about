@@ -7,9 +7,6 @@ Welcome to the interactive portfolio showcasing my work as a developer and progr
 - Experience across federal, higher‑education and association sectors.
 - Certifications: PMP, CSM, ITILv4, DHS Trusted Tester.
 
-## Tech Stack
-SvelteKit · Vite · Swiper · Vitest
-
 ## Run Locally
 ```bash
 npm install
