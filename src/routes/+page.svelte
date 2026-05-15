@@ -64,7 +64,6 @@
       {edge}
       {middle}
       {background}
-      parallax={0.45}
     >
       <div>
        <Heading level={2} style="color:white; margin-bottom:1rem;">Ready to Explore?</Heading>

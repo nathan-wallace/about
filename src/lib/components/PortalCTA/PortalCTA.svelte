@@ -36,8 +36,6 @@
     angle: 45
   };
 
-  export let parallax = 0.25;
-  export let scale = 0.0004;
   export let clipContent = true;
   export let respectReducedMotion = true;
 
@@ -49,8 +47,6 @@
   let dashOffset = 0;
   let shimmerPhase = 0;
   let prefersReducedMotion = false;
-  let isMobile = false;
-  let mq;
 
   const dispatch = createEventDispatcher();
 
@@ -138,18 +134,7 @@
     groupBg.setAttribute("transform", "scale(1.02)");
     groupMid.removeAttribute("transform");
     if (groupSlot) {
-      if (!prefersReducedMotion && (parallax || scale) && !isMobile) {
-        const rect = host.getBoundingClientRect();
-        const viewportCenter = window.innerHeight / 2;
-        const center = rect.top + rect.height / 2;
-        const offset = center - viewportCenter;
-        const translateY = -offset * parallax;
-        const s = Math.max(0, 1 - Math.abs(offset) * scale);
-        const transform = `translate(${(w / 2).toFixed(2)} ${(h / 2).toFixed(2)}) scale(${s.toFixed(3)}) translate(${(-w / 2).toFixed(2)} ${(-h / 2).toFixed(2)}) translate(0 ${translateY.toFixed(2)})`;
-        groupSlot.setAttribute("transform", transform);
-      } else {
-        groupSlot.removeAttribute("transform");
-      }
+      groupSlot.removeAttribute("transform");
     }
     groupEdge.removeAttribute("transform");
 
@@ -162,9 +147,6 @@
 
   let pathEdge, pathEdgeGlow, pathMiddleRing, pathClip;
   let groupBg, groupMid, groupEdge, groupSlot, gradShimmer;
-  function updateIsMobile(e) {
-    isMobile = e.matches;
-  }
 
   $: {
     if (svgEl) {
@@ -176,11 +158,6 @@
     observeSize();
     const rm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
     prefersReducedMotion = respectReducedMotion && rm ? rm.matches : false;
-    if (window.matchMedia) {
-      mq = window.matchMedia("(max-width: 768px)");
-      updateIsMobile(mq);
-      mq.addEventListener("change", updateIsMobile);
-    }
     rafId = requestAnimationFrame(loop);
   });
 
@@ -190,7 +167,6 @@
       cancelAnimationFrame(rafId);
     }
     ro && ro.disconnect();
-    mq && mq.removeEventListener("change", updateIsMobile);
   });
 </script>
 

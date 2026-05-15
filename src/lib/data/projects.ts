@@ -58,6 +58,12 @@ export const projects = [
     }
   },
   {
+    title: 'Top Task Research',
+    description: 'A dashboard for running Top Task identification studies — the UX research method for surfacing the small set of tasks users care most about. Collects responses, ranks tasks, and visualizes the long tail to guide prioritization.',
+    link: 'https://github.com/nathan-wallace/top-task-dashboard',
+    skills: ['UX Research', 'Data Visualization', 'JavaScript']
+  },
+  {
     title: 'Wayback Radio',
     description: 'Explore archival audio recordings through a unique, year-by-year browsing experience. By selecting a specific year, a listener can journey through history via sound.',
     link: 'https://nathan-wallace.github.io/wayback-radio',
