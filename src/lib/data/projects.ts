@@ -3,6 +3,7 @@ export const projects = [
     title: 'Treasury Sanctions Atlas',
     description: 'An interactive map and timeline of the U.S. Treasury OFAC sanctions lists. Explore nearly 20,000 sanctioned entities across 188 countries and 76 programs, filter by entity type, list, and program, and replay how designations and delistings have changed over time.',
     link: 'https://nathan-wallace.github.io/global-sanctions/#basis=nationality&mode=range&from=2026-08-15&to=2026-09-14',
+    image: '/sanctions-atlas.png',
     skills: ['Data Visualization', 'API Integration', 'JavaScript']
   },
   {
