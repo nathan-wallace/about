@@ -1,5 +1,11 @@
 export const projects = [
   {
+    title: 'Treasury Sanctions Atlas',
+    description: 'An interactive map and timeline of the U.S. Treasury OFAC sanctions lists. Explore nearly 20,000 sanctioned entities across 188 countries and 76 programs, filter by entity type, list, and program, and replay how designations and delistings have changed over time.',
+    link: 'https://nathan-wallace.github.io/global-sanctions/#basis=nationality&mode=range&from=2026-08-15&to=2026-09-14',
+    skills: ['Data Visualization', 'API Integration', 'JavaScript']
+  },
+  {
     title: 'The National Debt',
     description: 'An interactive web app that visualizes U.S. federal debt using live Treasury data, featuring dynamic chart and an animated ticker to make the history of the debt easy to explore.',
     link: 'https://nathan-wallace.github.io/the-national-debt/',
